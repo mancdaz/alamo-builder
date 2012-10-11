@@ -429,9 +429,9 @@ function download_cookbooks {
 
     pushd /root
     if [ ! -e /opt/rpcs/cookbooks ]; then
-        run_twice git clone http://github.com/rcbops/chef-cookbooks /opt/rpcs/chef-cookbooks 1>&9
+        run_twice git clone http://github.com/mancdaz/chef-cookbooks /opt/rpcs/chef-cookbooks 1>&9
         cd /opt/rpcs/chef-cookbooks
-        run_twice git checkout iso 1>&9
+        run_twice git checkout folsom 1>&9
 
         run_twice "initialize_submodules"
 
